@@ -14,13 +14,10 @@ class ViewController: UIViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    // FIXME: Why does this not work from IB?
-    webView.paginationMode = .LeftToRight
-    webView.paginationBreakingMode = .Page
-    webView.gapBetweenPages = 0
     webView.scrollView.pagingEnabled = true
-//    webView.scrollView.bounces = false
+    webView.scrollView.alwaysBounceHorizontal = true
     webView.scrollView.alwaysBounceVertical = false
+    
 
     let path = NSBundle.mainBundle().pathForResource("Simple", ofType: "html")
     let htmlData = NSData(contentsOfFile:path)
