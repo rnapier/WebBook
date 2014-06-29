@@ -12,6 +12,7 @@
 		FB4B91731960416F00A048F6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB4B91711960416F00A048F6 /* Main.storyboard */; };
 		FB4B91751960416F00A048F6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB4B91741960416F00A048F6 /* Images.xcassets */; };
 		FB4B91811960417000A048F6 /* WebBookTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4B91801960417000A048F6 /* WebBookTests.swift */; };
+		FB4B918B196041DF00A048F6 /* Book.html in Resources */ = {isa = PBXBuildFile; fileRef = FB4B918A196041DF00A048F6 /* Book.html */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +35,7 @@
 		FB4B917A1960417000A048F6 /* WebBookTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WebBookTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB4B917F1960417000A048F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FB4B91801960417000A048F6 /* WebBookTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebBookTests.swift; sourceTree = "<group>"; };
+		FB4B918A196041DF00A048F6 /* Book.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Book.html; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +89,7 @@
 		FB4B916B1960416F00A048F6 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				FB4B918A196041DF00A048F6 /* Book.html */,
 				FB4B916C1960416F00A048F6 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -189,6 +192,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB4B918B196041DF00A048F6 /* Book.html in Resources */,
 				FB4B91731960416F00A048F6 /* Main.storyboard in Resources */,
 				FB4B91751960416F00A048F6 /* Images.xcassets in Resources */,
 			);
