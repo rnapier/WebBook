@@ -16,9 +16,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="73h-9q-ckx">
+                            <webView contentMode="scaleToFill" paginationMode="topToBottom" pageLength="100" gapBetweenPages="10" translatesAutoresizingMaskIntoConstraints="NO" id="73h-9q-ckx">
                                 <rect key="frame" x="0.0" y="20" width="480" height="460"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <dataDetectorType key="dataDetectorTypes" link="YES"/>
                             </webView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>

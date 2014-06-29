@@ -14,7 +14,12 @@ class ViewController: UIViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    let path = NSBundle.mainBundle().pathForResource("Book", ofType: "html")
+    // FIXME: Why does this not work from IB?
+    webView.paginationMode = .LeftToRight
+    webView.paginationBreakingMode = .Page
+    webView.gapBetweenPages = 50
+
+    let path = NSBundle.mainBundle().pathForResource("Simple", ofType: "html")
     let htmlData = NSData(contentsOfFile:path)
     webView.loadData(htmlData, MIMEType: nil, textEncodingName: nil, baseURL: nil)
 

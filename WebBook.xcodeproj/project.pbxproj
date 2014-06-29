@@ -13,6 +13,7 @@
 		FB4B91751960416F00A048F6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB4B91741960416F00A048F6 /* Images.xcassets */; };
 		FB4B91811960417000A048F6 /* WebBookTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4B91801960417000A048F6 /* WebBookTests.swift */; };
 		FB4B918B196041DF00A048F6 /* Book.html in Resources */ = {isa = PBXBuildFile; fileRef = FB4B918A196041DF00A048F6 /* Book.html */; };
+		FBD58E6A19605213008BBD34 /* Simple.html in Resources */ = {isa = PBXBuildFile; fileRef = FBD58E6919605213008BBD34 /* Simple.html */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		FB4B917F1960417000A048F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FB4B91801960417000A048F6 /* WebBookTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebBookTests.swift; sourceTree = "<group>"; };
 		FB4B918A196041DF00A048F6 /* Book.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Book.html; sourceTree = "<group>"; };
+		FBD58E6919605213008BBD34 /* Simple.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Simple.html; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +93,7 @@
 			children = (
 				FB4B918A196041DF00A048F6 /* Book.html */,
 				FB4B916C1960416F00A048F6 /* Info.plist */,
+				FBD58E6919605213008BBD34 /* Simple.html */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -192,6 +195,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FBD58E6A19605213008BBD34 /* Simple.html in Resources */,
 				FB4B918B196041DF00A048F6 /* Book.html in Resources */,
 				FB4B91731960416F00A048F6 /* Main.storyboard in Resources */,
 				FB4B91751960416F00A048F6 /* Images.xcassets in Resources */,
@@ -403,6 +407,7 @@
 				FB4B91861960417000A048F6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FB4B91871960417000A048F6 /* Build configuration list for PBXNativeTarget "WebBookTests" */ = {
 			isa = XCConfigurationList;
@@ -411,6 +416,7 @@
 				FB4B91891960417000A048F6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
