@@ -91,9 +91,9 @@
 		FB4B916B1960416F00A048F6 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				FBD58E6919605213008BBD34 /* Simple.html */,
 				FB4B918A196041DF00A048F6 /* Book.html */,
 				FB4B916C1960416F00A048F6 /* Info.plist */,
-				FBD58E6919605213008BBD34 /* Simple.html */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
