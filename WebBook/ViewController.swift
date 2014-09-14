@@ -10,28 +10,25 @@ import UIKit
 import QuartzCore
 
 class ViewController: UIViewController, UIWebViewDelegate {
+
+  required init(coder aDecoder: NSCoder) {
+    super.init(coder: aDecoder)
+  }
                             
-  @IBOutlet var webView: UIWebView
+  @IBOutlet var webView: UIWebView!
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    webView.scrollView.pagingEnabled = true
-    webView.scrollView.alwaysBounceHorizontal = true
-    webView.scrollView.alwaysBounceVertical = false
-    webView.delegate = self
+    self.webView.scrollView.pagingEnabled = true
+    self.webView.scrollView.alwaysBounceHorizontal = true
+    self.webView.scrollView.alwaysBounceVertical = false
+    self.webView.delegate = self
 
-    let path = NSBundle.mainBundle().pathForResource("Simple", ofType: "html")
-    let htmlData = NSData(contentsOfFile:path)
-    webView.loadData(htmlData, MIMEType: nil, textEncodingName: nil, baseURL: nil)
-
-    // Do any additional setup after loading the view, typically from a nib.
+    if let path = NSBundle.mainBundle().pathForResource("Simple", ofType: "html") {
+      let htmlData = NSData(contentsOfFile:path)
+      self.webView.loadData(htmlData, MIMEType: nil, textEncodingName: nil, baseURL: nil)
+    }
   }
-
-  override func didReceiveMemoryWarning() {
-    super.didReceiveMemoryWarning()
-    // Dispose of any resources that can be recreated.
-  }
-
 
   func rectForElement(elementID: String) -> CGRect {
     let js = "function f(){ var r = document.getElementById('%@').getBoundingClientRect(); return '{{'+r.left+','+r.top+'},{'+r.width+','+r.height+'}}'; } f();";
@@ -49,15 +46,21 @@ class ViewController: UIViewController, UIWebViewDelegate {
     b.backgroundColor = UIColor.blueColor()
     v.addSubview(b)
 
-    let anim = CABasicAnimation(keyPath: "transform.rotation.z")
-    anim.fromValue = 0
-    anim.toValue = 2 * M_PI
-    anim.repeatCount = HUGE
-    anim.duration = 5
-    b.layer.addAnimation(anim, forKey: "rotate")
+//    let anim = CABasicAnimation(keyPath: "transform.rotation.z")
+//    anim.fromValue = 0
+//    anim.toValue = 2 * M_PI
+//    anim.repeatCount = HUGE
+//    anim.duration = 5
+//    b.layer.addAnimation(anim, forKey: "rotate")
 
+    let g = UIPanGestureRecognizer(target: self, action: Selector("drag:"))
+    b.addGestureRecognizer(g)
 
     webView.scrollView.addSubview(v)
+  }
+
+  func drag(g: UIPanGestureRecognizer) {
+    g.view?.center = g.locationInView(g.view?.superview)
   }
 }
 
