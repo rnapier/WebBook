@@ -7,48 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FB4B916E1960416F00A048F6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4B916D1960416F00A048F6 /* AppDelegate.swift */; };
+		FB3F826D1A9E847000EE7302 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3F826C1A9E847000EE7302 /* AppDelegate.swift */; };
 		FB4B91701960416F00A048F6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4B916F1960416F00A048F6 /* ViewController.swift */; };
 		FB4B91731960416F00A048F6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB4B91711960416F00A048F6 /* Main.storyboard */; };
 		FB4B91751960416F00A048F6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB4B91741960416F00A048F6 /* Images.xcassets */; };
-		FB4B91811960417000A048F6 /* WebBookTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4B91801960417000A048F6 /* WebBookTests.swift */; };
-		FB4B918B196041DF00A048F6 /* Book.html in Resources */ = {isa = PBXBuildFile; fileRef = FB4B918A196041DF00A048F6 /* Book.html */; };
 		FBD58E6A19605213008BBD34 /* Simple.html in Resources */ = {isa = PBXBuildFile; fileRef = FBD58E6919605213008BBD34 /* Simple.html */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		FB4B917B1960417000A048F6 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = FB4B91601960416F00A048F6 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = FB4B91671960416F00A048F6;
-			remoteInfo = WebBook;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
+		FB3F826A1A9E83BB00EE7302 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		FB3F826C1A9E847000EE7302 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FB4B91681960416F00A048F6 /* WebBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WebBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB4B916C1960416F00A048F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FB4B916D1960416F00A048F6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FB4B916F1960416F00A048F6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FB4B91721960416F00A048F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FB4B91741960416F00A048F6 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		FB4B917A1960417000A048F6 /* WebBookTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WebBookTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		FB4B917F1960417000A048F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FB4B91801960417000A048F6 /* WebBookTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebBookTests.swift; sourceTree = "<group>"; };
-		FB4B918A196041DF00A048F6 /* Book.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Book.html; sourceTree = "<group>"; };
-		FBD58E6919605213008BBD34 /* Simple.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Simple.html; sourceTree = "<group>"; };
+		FBD58E6919605213008BBD34 /* Simple.html */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = text.html; path = Simple.html; sourceTree = "<group>"; tabWidth = 2; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		FB4B91651960416F00A048F6 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FB4B91771960417000A048F6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -61,8 +39,8 @@
 		FB4B915F1960416F00A048F6 = {
 			isa = PBXGroup;
 			children = (
+				FB3F826A1A9E83BB00EE7302 /* README.md */,
 				FB4B916A1960416F00A048F6 /* WebBook */,
-				FB4B917D1960417000A048F6 /* WebBookTests */,
 				FB4B91691960416F00A048F6 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -71,7 +49,6 @@
 			isa = PBXGroup;
 			children = (
 				FB4B91681960416F00A048F6 /* WebBook.app */,
-				FB4B917A1960417000A048F6 /* WebBookTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -79,7 +56,7 @@
 		FB4B916A1960416F00A048F6 /* WebBook */ = {
 			isa = PBXGroup;
 			children = (
-				FB4B916D1960416F00A048F6 /* AppDelegate.swift */,
+				FB3F826C1A9E847000EE7302 /* AppDelegate.swift */,
 				FB4B916F1960416F00A048F6 /* ViewController.swift */,
 				FB4B91711960416F00A048F6 /* Main.storyboard */,
 				FB4B91741960416F00A048F6 /* Images.xcassets */,
@@ -92,25 +69,7 @@
 			isa = PBXGroup;
 			children = (
 				FBD58E6919605213008BBD34 /* Simple.html */,
-				FB4B918A196041DF00A048F6 /* Book.html */,
 				FB4B916C1960416F00A048F6 /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		FB4B917D1960417000A048F6 /* WebBookTests */ = {
-			isa = PBXGroup;
-			children = (
-				FB4B91801960417000A048F6 /* WebBookTests.swift */,
-				FB4B917E1960417000A048F6 /* Supporting Files */,
-			);
-			path = WebBookTests;
-			sourceTree = "<group>";
-		};
-		FB4B917E1960417000A048F6 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				FB4B917F1960417000A048F6 /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -135,24 +94,6 @@
 			productReference = FB4B91681960416F00A048F6 /* WebBook.app */;
 			productType = "com.apple.product-type.application";
 		};
-		FB4B91791960417000A048F6 /* WebBookTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = FB4B91871960417000A048F6 /* Build configuration list for PBXNativeTarget "WebBookTests" */;
-			buildPhases = (
-				FB4B91761960417000A048F6 /* Sources */,
-				FB4B91771960417000A048F6 /* Frameworks */,
-				FB4B91781960417000A048F6 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				FB4B917C1960417000A048F6 /* PBXTargetDependency */,
-			);
-			name = WebBookTests;
-			productName = WebBookTests;
-			productReference = FB4B917A1960417000A048F6 /* WebBookTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -164,10 +105,6 @@
 				TargetAttributes = {
 					FB4B91671960416F00A048F6 = {
 						CreatedOnToolsVersion = 6.0;
-					};
-					FB4B91791960417000A048F6 = {
-						CreatedOnToolsVersion = 6.0;
-						TestTargetID = FB4B91671960416F00A048F6;
 					};
 				};
 			};
@@ -185,7 +122,6 @@
 			projectRoot = "";
 			targets = (
 				FB4B91671960416F00A048F6 /* WebBook */,
-				FB4B91791960417000A048F6 /* WebBookTests */,
 			);
 		};
 /* End PBXProject section */
@@ -196,16 +132,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				FBD58E6A19605213008BBD34 /* Simple.html in Resources */,
-				FB4B918B196041DF00A048F6 /* Book.html in Resources */,
 				FB4B91731960416F00A048F6 /* Main.storyboard in Resources */,
 				FB4B91751960416F00A048F6 /* Images.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FB4B91781960417000A048F6 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,28 +144,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB3F826D1A9E847000EE7302 /* AppDelegate.swift in Sources */,
 				FB4B91701960416F00A048F6 /* ViewController.swift in Sources */,
-				FB4B916E1960416F00A048F6 /* AppDelegate.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FB4B91761960417000A048F6 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				FB4B91811960417000A048F6 /* WebBookTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		FB4B917C1960417000A048F6 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = FB4B91671960416F00A048F6 /* WebBook */;
-			targetProxy = FB4B917B1960417000A048F6 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		FB4B91711960416F00A048F6 /* Main.storyboard */ = {
@@ -352,42 +264,6 @@
 			};
 			name = Release;
 		};
-		FB4B91881960417000A048F6 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/WebBook.app/WebBook";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = WebBookTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				METAL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-			};
-			name = Debug;
-		};
-		FB4B91891960417000A048F6 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/WebBook.app/WebBook";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = WebBookTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				METAL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -405,15 +281,6 @@
 			buildConfigurations = (
 				FB4B91851960417000A048F6 /* Debug */,
 				FB4B91861960417000A048F6 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		FB4B91871960417000A048F6 /* Build configuration list for PBXNativeTarget "WebBookTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				FB4B91881960417000A048F6 /* Debug */,
-				FB4B91891960417000A048F6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
