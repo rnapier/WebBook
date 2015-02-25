@@ -37,21 +37,27 @@ class ViewController: UIViewController, UIWebViewDelegate {
     return rect;
   }
 
-  func webViewDidFinishLoad(webView: UIWebView!) {
+  func webViewDidFinishLoad(webView: UIWebView) {
     let r = rectForElement("embed1")
     let v = UIView(frame:r)
     v.backgroundColor = UIColor.redColor()
-    let b = UIButton.buttonWithType(.ContactAdd) as UIButton
+    let b = UIButton.buttonWithType(.ContactAdd) as! UIButton
     b.frame = CGRectMake(50, 50, 100, 100)
     b.backgroundColor = UIColor.blueColor()
     v.addSubview(b)
 
-//    let anim = CABasicAnimation(keyPath: "transform.rotation.z")
-//    anim.fromValue = 0
-//    anim.toValue = 2 * M_PI
-//    anim.repeatCount = HUGE
-//    anim.duration = 5
-//    b.layer.addAnimation(anim, forKey: "rotate")
+    let l = UILabel()
+    l.text = "I'm a UIView. Drag the box."
+    l.sizeToFit()
+    l.center = CGPointMake(CGRectGetWidth(v.bounds)/2, CGRectGetHeight(v.bounds)/2)
+    v.addSubview(l)
+
+    let anim = CABasicAnimation(keyPath: "transform.rotation.z")
+    anim.fromValue = 0
+    anim.toValue = 2 * M_PI
+    anim.repeatCount = HUGE
+    anim.duration = 5
+    b.layer.addAnimation(anim, forKey: "rotate")
 
     let g = UIPanGestureRecognizer(target: self, action: Selector("drag:"))
     b.addGestureRecognizer(g)
